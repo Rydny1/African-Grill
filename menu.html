@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Grill Master African Restaurant</title>
+  <meta name="description" content="Explore our full menu of authentic African grills, soups, stews, and more. Grill Master — Houston, TX." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <script src="https://kit.fontawesome.com/1ac6c6649a.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="assets/images/gm-logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/gm-logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="preloader">
+    <img src="assets/images/gm-logo.png" alt="Grill Master" />
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <a href="index.html"><img src="assets/images/gm-logo.png" alt="Grill Master" /></a>
+      <button class="mobile-close" id="mobileClose" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <i class="bi bi-arrow-right"></i></a>
+      <a href="menu.html" class="mobile-nav-link active">Menu <i class="bi bi-arrow-right"></i></a>
+      <a href="about.html" class="mobile-nav-link">About Us <i class="bi bi-arrow-right"></i></a>
+      <a href="contact.html" class="mobile-nav-link">Contact <i class="bi bi-arrow-right"></i></a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a href="https://wa.link/w0wid0" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>&nbsp; Order on WhatsApp</a>
+    </div>
+  </div>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar-inner">
+      <a class="navbar-brand" href="index.html"><img src="assets/images/gm-logo.png" alt="Grill Master" /></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <a href="https://wa.link/w0wid0" class="nav-cta" target="_blank" rel="noopener">Order Now</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <a href="https://wa.link/w0wid0" class="float-order" target="_blank" rel="noopener">
+    <i class="bi bi-whatsapp"></i> Order Now
+  </a>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">Grill Master</span>
+        <h1 class="section-title">Our Menu</h1>
+        <p>Authentic African flavors, sourced fresh, grilled to order.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+
+        <div class="menu-filter-bar" role="tablist">
+          <button class="filter-btn active" data-filter="all">All Dishes</button>
+          <button class="filter-btn" data-filter="grills">Grills &amp; BBQ</button>
+          <button class="filter-btn" data-filter="soups">Soups &amp; Stews</button>
+          <button class="filter-btn" data-filter="beverages">Beverages</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+
+          <!-- GRILLS -->
+          <div class="menu-card" data-category="grills">
+            <div class="menu-card-img">
+              <img src="assets/images/grilled-tilapia.jpg" alt="Grilled Tilapia" loading="lazy" />
+              <span class="menu-cat-tag">Grills</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Grilled Tilapia</h3>
+              <p>Whole tilapia marinated in our signature African spice blend, flame-grilled to perfection with a crispy golden exterior.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$18</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$24</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="grills">
+            <div class="menu-card-img">
+              <img src="assets/images/grilled-mackerel.jpg" alt="Grilled Mackerel" loading="lazy" />
+              <span class="menu-cat-tag">Grills</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Grilled Mackerel</h3>
+              <p>Fresh Atlantic mackerel seasoned with peppers, garlic &amp; herbs, grilled over open flame until perfectly charred.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$16</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$22</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="grills">
+            <div class="menu-card-img">
+              <img src="assets/images/katikati.jpg" alt="Kati Kati" loading="lazy" />
+              <span class="menu-cat-tag">Grills</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Kati Kati</h3>
+              <p>Traditional Cameroonian grilled chicken — tender, smoky, and fragrant with aromatic African spices and golden char marks.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Half</span><span class="amt">$15</span></div>
+                  <div class="price-tag"><span class="sz">Full</span><span class="amt">$24</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="grills">
+            <div class="menu-card-img">
+              <img src="assets/images/pork-ribs.jpg" alt="Pork Ribs" loading="lazy" />
+              <span class="menu-cat-tag">Grills</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Pork Ribs</h3>
+              <p>Slow-rubbed with our African spice blend and grilled until fall-off-the-bone tender with a rich caramelized crust.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Half</span><span class="amt">$18</span></div>
+                  <div class="price-tag"><span class="sz">Full</span><span class="amt">$28</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="grills">
+            <div class="menu-card-img">
+              <img src="assets/images/soya.jpg" alt="Soya Suya" loading="lazy" />
+              <span class="menu-cat-tag">Grills</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Soya (Beef Suya)</h3>
+              <p>Thinly sliced seasoned beef skewers marinated in our suya spice blend and chargrilled for smoky West African perfection.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$12</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$18</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="grills">
+            <div class="menu-card-img">
+              <img src="assets/images/goat-suya.jpeg" alt="Goat Suya" loading="lazy" />
+              <span class="menu-cat-tag">Grills</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Goat Suya</h3>
+              <p>Tender goat on skewers, seasoned with traditional suya spice and grilled over charcoal for deep, smoky flavor.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$14</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$20</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="grills">
+            <div class="menu-card-img">
+              <img src="assets/images/drum-fish.jpeg" alt="Drum Fish" loading="lazy" />
+              <span class="menu-cat-tag">Grills</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Drum Fish</h3>
+              <p>Large whole drum fish, fire-grilled with a bold pepper crust and bright citrus notes — a bold statement dish.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$20</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$28</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="grills">
+            <div class="menu-card-img">
+              <img src="assets/images/grilled-chicken.png" alt="Grilled Chicken" loading="lazy" />
+              <span class="menu-cat-tag">Grills</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Grilled Chicken</h3>
+              <p>Juicy chicken marinated in our house African blend, grilled to a gorgeous caramelized finish with bold, smoky flavor.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Half</span><span class="amt">$14</span></div>
+                  <div class="price-tag"><span class="sz">Full</span><span class="amt">$22</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SOUPS -->
+          <div class="menu-card" data-category="soups">
+            <div class="menu-card-img">
+              <img src="assets/images/egusi-soup.png" alt="Egusi Soup" loading="lazy" />
+              <span class="menu-cat-tag">Soups</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Egusi Soup</h3>
+              <p>A West African classic — ground melon seeds simmered in rich palm oil with assorted meat and smoked fish.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$14</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$20</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="soups">
+            <div class="menu-card-img">
+              <img src="assets/images/Eru.jpg" alt="Eru" loading="lazy" />
+              <span class="menu-cat-tag">Soups</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Eru</h3>
+              <p>A beloved Cameroonian delicacy — water leaves and okok slow-cooked in palm oil with choice stockfish and spices.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$14</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$20</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="soups">
+            <div class="menu-card-img">
+              <img src="assets/images/Okra.png" alt="Okra Soup" loading="lazy" />
+              <span class="menu-cat-tag">Soups</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Okra Soup</h3>
+              <p>Silky okra cooked with palm oil, crayfish, and choice proteins in a beautifully balanced, flavorful broth.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$12</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$18</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="soups">
+            <div class="menu-card-img">
+              <img src="assets/images/achu.jpg" alt="Achu" loading="lazy" />
+              <span class="menu-cat-tag">Soups</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Achu (Yellow Soup)</h3>
+              <p>Traditional Cameroonian achu cocoyam served with aromatic yellow palm soup and assorted meat — a true heritage dish.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$14</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$20</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SIDES -->
+          <div class="menu-card" data-category="soups">
+            <div class="menu-card-img">
+              <img src="assets/images/rice-stew.png" alt="Rice and Stew" loading="lazy" />
+              <span class="menu-cat-tag">Soups</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Rice &amp; Stew</h3>
+              <p>Perfectly cooked long-grain rice served with our rich, slow-simmered tomato-based African stew. Simple &amp; satisfying.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$10</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$14</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="soups">
+            <div class="menu-card-img">
+              <img src="assets/images/Ekwang_(Grated_cocoyam).jpg" alt="Ekwang" loading="lazy" />
+              <span class="menu-cat-tag">Soups</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Ekwang</h3>
+              <p>Grated cocoyam wrapped in cocoyam leaves and slow-cooked in palm oil — a cherished Cameroonian heritage dish.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$12</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$16</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="soups">
+            <div class="menu-card-img">
+              <img src="assets/images/pomo.png" alt="Pomo" loading="lazy" />
+              <span class="menu-cat-tag">Soups</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Pomo (Cow Skin)</h3>
+              <p>Slow-cooked seasoned cow skin, perfectly tender and flavorful — an excellent protein addition to any dish.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$8</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$14</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="grills">
+            <div class="menu-card-img">
+              <img src="assets/images/menu-beef.png" alt="Seasoned Beef" loading="lazy" />
+              <span class="menu-cat-tag">Grills</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Seasoned Beef</h3>
+              <p>Tender cuts of beef seasoned and cooked in our rich house spice blend, perfect as a side or protein addition.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$10</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$16</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BEVERAGES -->
+          <div class="menu-card" data-category="beverages">
+            <div class="menu-card-img">
+              <img src="assets/images/Chapman.jpg" alt="Chapman" loading="lazy" />
+              <span class="menu-cat-tag">Beverage</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Chapman</h3>
+              <p>Classic Nigerian party drink — Fanta, Sprite, sliced cucumber &amp; orange, topped with grenadine and ice. Refreshing &amp; festive.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$4</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$6</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="beverages">
+            <div class="menu-card-img">
+              <img src="assets/images/ginger-beer.jpg" alt="House Ginger Beer" loading="lazy" />
+              <span class="menu-cat-tag">Beverage</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>House Ginger Beer</h3>
+              <p>Homemade spiced ginger beer brewed in-house — bold, fiery &amp; naturally carbonated. The perfect companion to grilled meats.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$4</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$6</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="beverages">
+            <div class="menu-card-img">
+              <img src="assets/images/fruit-punch.jpg" alt="Fresh Fruit Punch" loading="lazy" />
+              <span class="menu-cat-tag">Beverage</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Fresh Fruit Punch</h3>
+              <p>A vibrant blend of seasonal tropical fruits, freshly pressed and lightly sweetened. Bright, fruity &amp; made to order.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Small</span><span class="amt">$4</span></div>
+                  <div class="price-tag"><span class="sz">Large</span><span class="amt">$6</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card" data-category="beverages">
+            <div class="menu-card-img">
+              <img src="assets/images/water-softdrinks.jpg" alt="Water &amp; Soft Drinks" loading="lazy" />
+              <span class="menu-cat-tag">Beverage</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Water &amp; Soft Drinks</h3>
+              <p>Chilled bottled water (still or sparkling), Coca-Cola, Fanta, Sprite &amp; more. Always ice-cold &amp; refreshing.</p>
+              <div class="menu-price-row">
+                <div class="price-tags">
+                  <div class="price-tag"><span class="sz">Each</span><span class="amt">$2</span></div>
+                </div>
+                <a href="https://wa.link/w0wid0" class="menu-order-btn" target="_blank" rel="noopener">Order <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /menu-grid -->
+
+        <div class="text-center reveal" style="margin-top:4rem;padding:2.5rem;background:var(--bg-3);border-radius:var(--radius-xl);border:1px solid var(--border);">
+          <span class="section-label">How to Order</span>
+          <h3 style="font-family:var(--font-heading);font-size:1.75rem;margin-bottom:0.75rem;color:var(--text-1);">Ready to eat?</h3>
+          <p style="color:var(--text-2);font-size:1rem;margin:0 auto 2rem;max-width:480px;">Place your order via WhatsApp for pick-up or dine-in. We'll have it fresh &amp; ready.</p>
+          <a href="https://wa.link/w0wid0" class="btn btn-brand btn-lg" target="_blank" rel="noopener">
+            <i class="bi bi-whatsapp"></i> Order on WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/gm-logo.png" alt="Grill Master" />
+          <p>The authentic taste of Africa, grilled to perfection. Join us for a memorable dining experience.</p>
+          <div class="footer-social">
+            <a href="https://www.tiktok.com/@grillmaster992" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.link/w0wid0" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>9755 S Kirkwood Rd D,<br/>Houston, TX 77099</span></div>
+          <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><a href="tel:+13464915054">+1 (346) 491-5054</a></div>
+          <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><a href="mailto:grillmasterafrica@gmail.com">grillmasterafrica@gmail.com</a></div>
+        </div>
+        <div class="footer-col">
+          <h5>Hours</h5>
+          <div class="hours-mini">
+            <div class="h-row"><span>Tue &ndash; Thu</span><span class="t">11am &ndash; 9pm</span></div>
+            <div class="h-row"><span>Fri &ndash; Sat</span><span class="t">11am &ndash; 10:30pm</span></div>
+            <div class="h-row"><span>Sunday</span><span class="t">12pm &ndash; 8pm</span></div>
+            <div class="h-row"><span>Monday</span><span class="closed">Closed</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Grill Master African Restaurant. All rights reserved.</p>
+        <a href="contact.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
